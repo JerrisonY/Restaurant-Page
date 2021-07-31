@@ -6,7 +6,7 @@ const home = document.querySelector('#home');
 const menu = document.querySelector('#menu');
 
 
-let newButtons = () => {
+let createButtons = () => {
     let container = document.createElement('div');
     let leftBtn = document.createElement('span');
     let rightBtn = document.createElement('span');
@@ -42,11 +42,19 @@ let newButtons = () => {
     })
 }
 
-newButtons()
+createButtons()
+
+home.addEventListener('click', () => {
+    createButtons();
+    console.log(main)
+    main.classList.add('bg-image2');
+
+})
 
 menu.addEventListener('click', () => {
+    const btnContainer = document.querySelector('.btn-container')
+    btnContainer.remove()
+
     menuTab()
-    // const btnContainer = document.querySelector('.btn-container')
-    // btnContainer.remove()
 
 })
