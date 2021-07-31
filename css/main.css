@@ -3,3 +3,126 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.bg-image {
+    background-image: url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    transition: 0.5s;
+}
+
+.bg-image2 {
+    background-image: url(https://images.unsplash.com/photo-1517178313064-9447953f46e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    transition: 0.5s;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    height: 70px;
+    font-weight: 400;
+    color: white;
+    transition: 0.2;
+
+}
+
+.header:hover {
+    color: grey;
+}
+
+.header-tabs {
+    display: flex;
+    align-items: center;
+}
+
+.header-tabs p {
+    padding: 0 7px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header-tabs p:hover {
+    color: white;
+}
+
+.header-socials i {
+    padding: 0 7px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header-socials i:hover {
+    color: white;
+}
+
+.reserve {
+    border: solid 1px white;
+    padding: 10px 15px;
+    margin-left: 7px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.reserve:hover {
+    color: white;
+}
+
+.ruler {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.btn-container {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-arrow {
+    font-size: 1em;
+    color: white;
+    opacity: 60%;
+    border-right: solid 1px rgba(255,255,255, 0.3);
+    padding: 25px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.right-arrow {
+    font-size: 1em;
+    color: white;
+    opacity: 60%;
+    border-left: solid 1px rgba(255,255,255, 0.3);
+    padding: 25px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.left-arrow:hover {
+    opacity: 100%;
+    border-right: solid 1px white;
+
+}
+
+.right-arrow:hover {
+    opacity: 100%;
+    border-left: solid 1px white;
+
+}

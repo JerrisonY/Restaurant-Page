@@ -1,0 +1,52 @@
+import { menuTab } from './menu.js';
+
+const main = document.querySelector('main');
+const imageOne = document.querySelector('.bg-image');
+const home = document.querySelector('#home');
+const menu = document.querySelector('#menu');
+
+
+let newButtons = () => {
+    let container = document.createElement('div');
+    let leftBtn = document.createElement('span');
+    let rightBtn = document.createElement('span');
+
+    container.classList.add('btn-container')
+    leftBtn.classList.add('left-arrow');
+    rightBtn.classList.add('right-arrow');
+
+    leftBtn.textContent = '\u2329';
+    rightBtn.textContent = '\u232a';
+
+    container.append(leftBtn, rightBtn)
+    main.append(container)
+
+    rightBtn.addEventListener('click', () => {
+        if (main.classList.contains('bg-image2')) {
+            main.classList.remove('bg-image2')
+            main.classList.add('bg-image')
+        } else {
+            main.classList.add('bg-image2')
+            main.classList.remove('bg-image')
+        }
+    })
+
+    leftBtn.addEventListener('click', () => {
+        if (main.classList.contains('bg-image2')) {
+            main.classList.remove('bg-image2')
+            main.classList.add('bg-image')
+        } else {
+            main.classList.add('bg-image2')
+            main.classList.remove('bg-image')
+        }
+    })
+}
+
+newButtons()
+
+menu.addEventListener('click', () => {
+    menuTab()
+    // const btnContainer = document.querySelector('.btn-container')
+    // btnContainer.remove()
+
+})
