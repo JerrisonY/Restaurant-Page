@@ -1,4 +1,5 @@
 import { menuTab } from './menu.js';
+import { aboutTab } from './about.js';
 
 const main = document.querySelector('main');
 const imageOne = document.querySelector('.bg-image');
@@ -46,6 +47,9 @@ let createButtons = () => {
 createButtons()
 
 home.addEventListener('click', () => {
+    const menuContainer = document.querySelector('.menu-container')
+    menuContainer.remove()
+
     createButtons();
     main.classList.add('bg-image2');
 
@@ -56,12 +60,13 @@ menu.addEventListener('click', () => {
     btnContainer.remove()
 
     menuTab()
-
 })
 
 about.addEventListener('click', () => {
-    const btnContainer = document.querySelector('.btn-container')
-    btnContainer.remove()
+    const btnContainer = document.querySelector('.btn-container');
+    btnContainer.remove();
+    // const menuContainer = document.querySelector('.menu-container');
+    // menuContainer.remove();
 
     aboutTab()
 })
